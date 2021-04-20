@@ -3,7 +3,7 @@ This is by no means an optimized, performant, or accurate state machine. I am us
 
 Quick sample on how it works
 
-```
+```js
     let StateMachine = require('./State.js');
 
     let initialState = 'default';
@@ -20,4 +20,4 @@ Quick sample on how it works
     // "default"
     console.log(s.state);
 
-```js
+```
