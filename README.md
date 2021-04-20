@@ -20,4 +20,4 @@ Quick sample on how it works
     // "default"
     console.log(s.state);
 
-```
+```js
