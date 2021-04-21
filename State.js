@@ -2,10 +2,15 @@ const EventEmitter = require('events');
 
 class StateMachine {
 
+    // Set up state machine with transition graph & initial state
     constructor(initialState, transitions) {
         this.state = initialState;
         this.transitions = transitions;
         this.emitter = new EventEmitter();
+    }
+
+    getState() {
+        console.log(this.state);
     }
 
     emit(n) {

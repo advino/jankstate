@@ -11,7 +11,16 @@ let transitions = {
 
 let s = new StateMachine(initialState, transitions);
 
-console.log(s.state);
+s.on('click', () => {
 
+    s.getState();
+    s.emit('success');
+});
 
+s.on('success', () => {
 
+    s.getState();
+    s.emit('exit');
+});
+
+s.emit('click');
