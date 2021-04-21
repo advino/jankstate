@@ -11,16 +11,19 @@ let transitions = {
 
 let s = new StateMachine(initialState, transitions);
 
+// event listener for transition "click"
 s.on('click', () => {
 
     s.getState();
     s.emit('success');
 });
 
+// event listern for transition "success"
 s.on('success', () => {
 
     s.getState();
     s.emit('exit');
 });
 
+// emit "click" transition
 s.emit('click');
