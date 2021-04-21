@@ -34,3 +34,10 @@ Quick sample on how it works
     // emit "click" transition
     s.emit('click');
 ```
+
+Logging from this program
+
+```
+    loading
+    active
+```
